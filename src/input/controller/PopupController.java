@@ -15,6 +15,9 @@ public class PopupController
 	
 	public void start()
 	{
+		/**
+		 * Starts the whole input system.
+		 */
 		String name = myPopups.getAnswer("Type in your name");
 		
 		myPopups.displayResponse("Thank you, " + name);
@@ -64,6 +67,11 @@ public class PopupController
 		myPopups.displayResponse(myThing.toString());
 	}
 	
+	/**
+	 * The fail answer if you do not put in a valid age.
+	 * @param input
+	 * @return
+	 */
 	private boolean isInteger(String input)
 	{
 		boolean isInt = false;
@@ -80,6 +88,11 @@ public class PopupController
 		return isInt;
 	}
 	
+	/**
+	 * The fail answer if you do not put in a valid weight.
+	 * @param input
+	 * @return
+	 */
 	private boolean isDouble(String input)
 	{
 		boolean isDouble = false;

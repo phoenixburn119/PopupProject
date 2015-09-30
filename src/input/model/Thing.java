@@ -20,7 +20,48 @@ public class Thing
 		this.weight = weight;
 	}
 	
-	public String toString()
+	/**
+	 * Thee Getters will get the information you want.
+	 * @return
+	 */
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getAge()
+	{
+		return age;
+	}
+	
+	public double getWeight()
+	{
+		return weight;
+	}
+	
+	/**
+	 * The Setters will set the information replacing what you had.yyyyyyyyyyyyyyy
+	 * @param name
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	public void setWeight(double weight)
+	{
+		this.weight = weight;
+	}
+	
+	/**
+	 * The toString method replaces the normal toString with your own.
+	 */
+ 	public String toString()
 	{
 		String thingInfo = " name: " + name + " age: " + age + " weight: " + weight;
 		return thingInfo;
